@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+<title>AsciiArtWeb Page</title>
+<style>
+    .head{
+        color:dodgerblue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        background-color: azure;
+    }
+    .body{
+background-color: dodgerblue;
+color:azure;
+text-align: center;
+padding: 0%;
+font-size: large;
+    }
+</style>
+    </head>
+        <body>
+<header> Welcome to AsciiArtWeb</header>
+<h1>ASCII WEB</h1>
+
+<form action="/asciiart" method="post">
+    <h2> Input text</h2>
+    <textarea name="text" id="text"></textarea>
+    <select name="banner" id="banner">
+    <option>thinkertoy</option>
+    <option>standard</option>
+    <option>shadow</option>
+    </select>
+<button type="Submit">Submit</button>
+</form>
+<pre aria-readonly="true">{{.}}</pre>
+
+
+<footer>Visit us @
+    <a href="www.asciiartweb.com" title="For more information">asciiartweb</a>
+</footer>
+        </body>
+</html>
